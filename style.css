@@ -1,0 +1,33 @@
+/*
+Theme Name: Allinone
+Author: Giovane Ferreira
+Description: Site de notícias rápidas
+Version: 1.0.0
+*/
+
+.topo{
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+}
+
+.topo ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size:xx-large;
+    
+}
+
+.topo ul li{
+    list-style-type: none;
+    padding-right: 150px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.topo ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+
