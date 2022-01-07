@@ -11,20 +11,18 @@
     <div class="topo">
         <nav>
             <ul>
-                <li><a href="#">Esporte </a></li>
+                <li><a href="#">Esporte</a></li>
                 <li><a href="#">Música</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="#">E-sports</a></li>
                 <li><a href="#">Promoções do dia</a></li>
             </ul>
-            
-            
         </nav>
     </div>
-   
+    <hr>
     <div>
-        
+        reportagem principal 
     </div>
 
 </body>

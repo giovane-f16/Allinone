@@ -5,25 +5,29 @@ Description: Site de notícias rápidas
 Version: 1.0.0
 */
 
-.topo{
-    padding: 25px;
-}
 
 .topo ul{
     display: flex;
-    justify-content: center;
-    font-size:xx-large;
-    
+    flex-direction: row;
+    font-size: x-large;
+    background-color: aqua;
+    justify-content: space-around;
+    padding-left: 0px;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 .topo ul li{
     list-style-type: none;
-    padding-right: 150px;
+    background-color: #ff0404;
+    padding: 15px;
+    margin: 10px;
 }
 
 .topo ul li a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-
+    font-family: monospace;
 }
+
 
