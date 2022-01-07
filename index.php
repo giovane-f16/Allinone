@@ -31,7 +31,9 @@
             <ul>
                 <li><a href="#">Dólar:
                 <?php 
-                    $ch = curl_init("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='01-06-2022'&format=json");
+                    //http://www.dbins.com.br/dica/cotacao-do-dolar-com-php
+                    
+                    $ch = curl_init("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='01-07-2022'&format=json");
                     
                     curl_setopt($ch, CURLOPT_HEADER, 0);
                     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
@@ -64,6 +66,9 @@
                 <li><a href="#">Euro</a></li>
             </ul>
         </nav>
+    </div>
+    <div>
+
     </div>
 
 </body>
