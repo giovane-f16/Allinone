@@ -22,7 +22,48 @@
     </div>
     <hr>
     <div>
-        reportagem principal 
+        reportagem principal
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <div class="meio">
+        <nav>
+            <ul>
+                <li><a href="#">Dólar:
+                <?php 
+                    $ch = curl_init("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='01-06-2022'&format=json");
+                    
+                    curl_setopt($ch, CURLOPT_HEADER, 0);
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    
+                    $res_curl = curl_exec($ch);
+
+                    /*
+                    if (curl_error($ch)) {
+                            echo curl_error($ch);
+                    } else {
+                             print_r($res_curl);
+                    }
+                    */
+
+                    $resultado = json_decode($res_curl, true);
+                    
+                    $valores = $resultado["value"][0];
+                    
+                    echo $valores["cotacaoCompra"];
+                    echo "<br>";
+                    /* echo $valores["dataHoraCotacao"]; */
+
+                    curl_close($ch);
+                ?> </a></li>
+                <li><a href="#">IPCA</a></li>
+                <li><a href="#">Combustível</a></li>
+                <li><a href="#">Salário Mínimo</a></li>
+                <li><a href="#">Euro</a></li>
+            </ul>
+        </nav>
     </div>
 
 </body>
