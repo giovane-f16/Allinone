@@ -22,17 +22,17 @@
     </div>
 
     <hr>
-    
-    <div>
-        reportagem principal
+
+    <div class="principal">
+        <img src="https://image.freepik.com/vetores-gratis/texto-dourado-2022-estilo-3d-realista-sobre-fundo-branco-bokeh_1017-35372.jpg">
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <hr>
     
     <div class="meio">
         <nav>
             <ul>
-                <li><a href="#">Dólar:
+                <li><a href="http://www.dbins.com.br/dica/cotacao-do-dolar-com-php">Dólar:
                 <?php 
                     // Conexão API: http://www.dbins.com.br/dica/cotacao-do-dolar-com-php
 
@@ -67,8 +67,17 @@
             </ul>
         </nav>
     </div>
-    <div>
 
+    <br><br><br><br><br>
+
+    <div class="inferior">
+        <nav> 
+            <ul>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Esporte</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </nav>
     </div>
 
 </body>

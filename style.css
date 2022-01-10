@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: row;
     font-size: x-large;
-    background-color: rgb(182, 255, 255);
+    background-color: rgb(218, 221, 248);
     justify-content: space-around;
     padding-left: 0px;
     border: 5px solid black;
@@ -50,3 +50,28 @@ body{
     text-decoration: none;
     color: black;
 }
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inferior ul{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    justify-content: space-evenly;
+}
+
+.inferior ul li{
+    list-style-type: none;
+    padding: 5px;
+    border: 4px solid black;
+}
+
+.inferior ul li a{
+    text-decoration: none;
+    color: black;
+}
+
