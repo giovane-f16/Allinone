@@ -33,6 +33,10 @@ body{
     font-family: monospace;
 }
 
+.meio{
+    margin-bottom: 75px;
+}
+
 .meio ul{
     display: flex;
     flex-direction: row;
@@ -54,7 +58,6 @@ body{
 .principal {
     display: flex;
     justify-content: space-around;
-
 }
 
 .inferior ul{
@@ -62,16 +65,21 @@ body{
     flex-direction: row;
     font-size: x-large;
     justify-content: space-evenly;
+    
 }
 
 .inferior ul li{
     list-style-type: none;
-    padding: 5px;
+    padding: 10px 10px 85px;
     border: 4px solid black;
 }
 
 .inferior ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
+.inferior ul li:hover{
+    background-color: blue;
+    font-family: monospace;
+}

@@ -11,12 +11,10 @@
     <div class="topo">
         <nav>
             <ul>
-                <li><a href="#">Esporte</a></li>
-                <li><a href="#">Música</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">E-sports</a></li>
-                <li><a href="#">Promoções do dia</a></li>
+                <?php 
+                Exibir_categorias()
+                
+                ?>
             </ul>
         </nav>
     </div>
@@ -33,32 +31,11 @@
         <nav>
             <ul>
                 <li><a href="http://www.dbins.com.br/dica/cotacao-do-dolar-com-php">Dólar:
+
                 <?php 
-                    // Conexão API: http://www.dbins.com.br/dica/cotacao-do-dolar-com-php
-
-                    // Iniciando conexão com o link que queremos acessar, enviando os parâmetros (get ?)
-                    $ch = curl_init("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='01-07-2022'&format=json");
-                    
-                    // Definindo configurações para a nossa conexão (Parâmetros: conexão, comando, valor)
-                    curl_setopt($ch, CURLOPT_HEADER, 0); // Desativa retorno das informações do cabeçalho do server
-                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); // Desativa verificação SSL
-                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); // Desativa verificação SSL
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Ativamos para permitir receber os dados enviados pelo server
-                    
-                    $res_curl = curl_exec($ch); // Executamos a nossa conexão
-
-                    $resultado = json_decode($res_curl, true); // Convertendo a string JSON para Array
-                    
-                    $valores = $resultado["value"][0]; // Dentro do campo Value, existe um array de objetos com as informações que queremos
-                    
-                    echo $valores["cotacaoCompra"]; // Recuperando somente o valor do dólar 
-                    echo "<br>";
-
-                    //echo $valores["dataHoraCotacao"]; // Recuperando a data e hora da cotação.
-
-                    curl_close($ch); // Fechando a conexão
-
-                ?> </a></li>
+                Pegar_valor_dolar()
+                ?> 
+                </a></li>
 
                 <li><a href="#">IPCA</a></li>
                 <li><a href="#">Combustível</a></li>
@@ -68,7 +45,6 @@
         </nav>
     </div>
 
-    <br><br><br><br><br>
 
     <div class="inferior">
         <nav> 
