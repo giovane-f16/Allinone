@@ -33,8 +33,12 @@ body{
     font-family: monospace;
 }
 
+.topo ul li a:hover{
+    color: rgb(4, 4, 179);
+}
+
 .meio{
-    margin-bottom: 75px;
+    margin-bottom: 155px;
 }
 
 .meio ul{
@@ -71,7 +75,7 @@ body{
 .inferior ul li{
     list-style-type: none;
     padding: 10px 10px 85px;
-    border: 4px solid black;
+    border: 2px solid black;
 }
 
 .inferior ul li a{
