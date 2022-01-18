@@ -9,7 +9,6 @@ body{
     font-family: sans-serif;
 }
 
-
 .topo ul{
     display: flex;
     flex-direction: row;
@@ -37,6 +36,11 @@ body{
     color: rgb(4, 4, 179);
 }
 
+.principal {
+    display: flex;
+    justify-content: space-around;
+}
+
 .meio{
     margin-bottom: 155px;
 }
@@ -54,14 +58,13 @@ body{
     border-radius: 10px;
 }
 
+.meio ul li:hover{
+    background-color: rgb(125, 125, 253);
+}
+
 .meio ul li a{
     text-decoration: none;
     color: black;
-}
-
-.principal {
-    display: flex;
-    justify-content: space-around;
 }
 
 .inferior ul{
@@ -86,4 +89,25 @@ body{
 .inferior ul li:hover{
     background-color: blue;
     font-family: monospace;
+}
+
+.reportagens ul{
+    list-style-type: none;
+}
+
+.reportagens ul li{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reportagens img{
+    height: 300px;
+    width: 300px;
+}
+
+.reportagens a{
+    text-decoration: none;
+    color: black;
 }

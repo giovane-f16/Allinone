@@ -12,17 +12,30 @@ if (count($posts) == 0){
 }
 
 else {
+    echo "<div class='reportagens'>";
     echo "<ul>";
+
     foreach($posts as $post){
-        echo "<li><h1>".$post->post_title."</h1>";
+
+        $permalink = get_permalink($post);
+
+        echo "<li>";
+        echo "<div>";
+        echo "<h2><a href='{$permalink}'>".$post->post_title."</a></h2>";
         echo $post->post_date." ";
-        echo $post->post_excerpt."<br>";
+        echo $post->post_excerpt;
+        echo "</div>";
+
+        $thumb = get_the_post_thumbnail($post);
+        echo $thumb;
+        echo "</li>";
+    
         echo "<hr>";
     }
-
     echo "</ul>";
+    echo "</div>";
 }
-
+echo "<a class='voltar' href='index.html'>Voltar</a>";
 
 get_footer();
 ?>

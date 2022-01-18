@@ -1,5 +1,10 @@
 <?php
 
+add_action("after_setup_theme", function() {
+    add_theme_support("post-thumbnails");
+});
+
+
 // Criando a função para dinamizar as categorias
 function Exibir_categorias(){
 
@@ -32,8 +37,6 @@ function Pegar_valor_dolar() {
     echo $valores["cotacaoCompra"]; // Recuperando somente o valor do dólar 
     echo "<br>";
 
-    //echo $valores["dataHoraCotacao"]; // Recuperando a data e hora da cotação.
-
     curl_close($ch); // Fechando a conexão
 } 
 
@@ -43,42 +46,20 @@ function Pegar_ipca(){
     $endpoint = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10844/dados/ultimos/10';
     $params = array('formato' => 'json');
     $url = $endpoint . '?' . http_build_query($params);
+
     curl_setopt($conec, CURLOPT_URL, $url);
-
-    /*
-    curl_setopt($conec, CURLOPT_HEADER, 0); 
-    curl_setopt($conec, CURLOPT_SSL_VERIFYPEER, 0); 
-    curl_setopt($conec, CURLOPT_SSL_VERIFYHOST, 0); 
-    curl_setopt($conec, CURLOPT_RETURNTRANSFER, true); 
-    */
-
     curl_setopt($conec, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($conec, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
     curl_setopt($conec, CURLOPT_CUSTOMREQUEST, "GET");
     
-
     $exec_curl = curl_exec($conec);
-
-    /*
-    if(curl_error($conec)) {
-        echo "<br>";
-        echo curl_error($conec);
-    } else {
-        print_r($exec_curl);
-    } */
 
     $resultado = json_decode($exec_curl, true);
 
     var_dump($resultado);
 
-    //$valores = var_dump($resultado["valor"]);
-
-    //echo $valores;
-
     curl_close($conec);
 }
-
-
 
 ?>
 

@@ -11,7 +11,7 @@
     <div class="topo">
         <nav>
             <ul>
-                <?php Exibir_categorias()?>
+                <?php Exibir_categorias() ?>
             </ul>
         </nav>
     </div>
