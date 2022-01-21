@@ -111,3 +111,25 @@ body{
     text-decoration: none;
     color: black;
 }
+
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.voltar a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    background-color: rgb(218, 221, 248);
+    padding: 5px 15px;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+.voltar a:hover{
+    background-color:rgb(153, 163, 248)
+}
+

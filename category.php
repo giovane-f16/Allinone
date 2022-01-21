@@ -1,5 +1,5 @@
 <?php 
-get_header(); 
+get_header();
 
 $id_categoria = get_query_var( 'cat' );
 
@@ -35,7 +35,9 @@ else {
     echo "</ul>";
     echo "</div>";
 }
-echo "<a class='voltar' href='index.html'>Voltar</a>";
+echo "<div class='voltar'>";
+echo "<a href='index.html'>Início</a>";
+echo "</div>";
 
 get_footer();
 ?>

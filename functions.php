@@ -1,9 +1,8 @@
 <?php
-
-add_action("after_setup_theme", function() {
-    add_theme_support("post-thumbnails");
+// Adicionando no WP a área de Thumbnails nos Posts
+add_action ("after_setup_theme", function() {
+    add_theme_support("post-thumbnails"); 
 });
-
 
 // Criando a função para dinamizar as categorias
 function Exibir_categorias(){
