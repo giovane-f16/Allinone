@@ -36,7 +36,7 @@ else {
     echo "</div>";
 }
 echo "<div class='voltar'>";
-echo "<a href='index.html'>Início</a>";
+echo "<a href='\wordpress'>Início</a>";
 echo "</div>";
 
 get_footer();
