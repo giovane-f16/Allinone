@@ -57,10 +57,11 @@ body{
     padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
+    background-color:rgb(218, 221, 248);
 }
 
 .meio ul li:hover{
-    background-color: rgb(125, 125, 253);
+    background-color: rgb(154, 154, 255);
 }
 
 .meio ul li a{
@@ -80,6 +81,7 @@ body{
     list-style-type: none;
     padding: 10px 10px 85px;
     border: 2px solid black;
+    background-color:rgb(218, 221, 248);
 }
 
 .inferior ul li a{
@@ -88,8 +90,7 @@ body{
 }
 
 .inferior ul li:hover{
-    background-color: blue;
-    font-family: monospace;
+    background-color: rgb(154, 154, 255);
 }
 
 .reportagens ul{

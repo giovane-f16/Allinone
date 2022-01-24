@@ -36,6 +36,7 @@ else {
     echo "</div>";
 }
 echo "<div class='voltar'>";
+/* Perguntar para qual redirecionar: index.html ou \wordpress ou outro */
 echo "<a href='\wordpress'>Início</a>";
 echo "</div>";
 
