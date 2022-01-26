@@ -26,8 +26,9 @@
     echo "</div>";
 
     echo "<div class='voltar'>";
-    /* Perguntar maneira correta de trazer botão de Início*/
+    /* Perguntar: maneira correta de trazer botão de Início*/
     echo "<a href='\wordpress'>Início</a>";
+    // Criar botão de voltar
     echo "</div>";
 
     get_footer();
