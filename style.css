@@ -7,6 +7,12 @@ Version: 1.0.0
 
 body{
     font-family: sans-serif;
+    background-color: rgb(229, 229, 255);
+    background-image: url("fundo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*text-align: center;*/
 }
 
 .topo ul{
@@ -18,6 +24,7 @@ body{
     padding-left: 0px;
     border: 5px solid black;
     border-radius: 10px;
+    background-image: url("fundo.jfif");
 }
 
 .topo ul li{
@@ -27,7 +34,7 @@ body{
 }
 
 .topo ul li a{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: monospace;
 }
@@ -82,11 +89,19 @@ body{
     padding: 10px 10px 85px;
     border: 2px solid black;
     background-color:rgb(218, 221, 248);
+    position: relative;
+    width: 50%;
+    height: 50%;
 }
 
 .inferior ul li a{
+    display: block;
     text-decoration: none;
+    position: absolute;
     color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .inferior ul li:hover{
@@ -105,6 +120,8 @@ body{
 }
 
 .reportagens img{
+    object-fit: cover;
+    object-position: top;
     height: 300px;
     width: 300px;
 }
@@ -147,4 +164,10 @@ body{
 
     max-height: 600px;
     max-width: 600px;
+}
+
+.texto{
+    text-align: justify;
+    padding: 10px 25px;
+
 }

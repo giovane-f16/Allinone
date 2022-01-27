@@ -67,5 +67,11 @@ function Pegar_musica(){
     echo "<a href='{$link}'>{$post->post_title}</a>";
 }
 
+function Botao_voltar(){
+    echo "<div class='voltar'>";
+    echo "<a href='/wordpress'>Início</a>";
+    echo "</div>";
+}
+
 ?>
 

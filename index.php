@@ -20,7 +20,7 @@
 <div class="inferior">
     <nav> 
         <ul>
-            <li><a href="#"><?php Pegar_musica() ?></a></li>
+            <li><?php Pegar_musica() ?></li>
             <li><a href="#">Esporte</a></li>
             <li><a href="#">Ofertas</a></li>
         </ul>
