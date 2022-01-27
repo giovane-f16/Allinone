@@ -1,4 +1,5 @@
 <?php
+
 // Adicionando no WP a área de Thumbnails nos Posts
 add_action ("after_setup_theme", function() {
     add_theme_support("post-thumbnails"); 
@@ -58,6 +59,19 @@ function Pegar_ipca(){
     var_dump($resultado);
 
     curl_close($conec);
+}
+
+function Pegar_musica(){
+    $array = ["hide_empty"=>false];
+    $categorias = get_terms($array);
+    
+    //var_dump($categorias);
+
+    $post = get_posts();
+    $id_da_categoria = get_the_terms($post, 'category');
+    
+    //var_dump($id_da_categoria);
+
 }
 
 ?>

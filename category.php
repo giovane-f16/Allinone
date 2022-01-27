@@ -3,6 +3,7 @@ get_header();
 
 // Retorna o ID da categoria. get_query_var recupera o valor de uma variável de consulta na classe wp_query
 $id_categoria = get_query_var( 'cat' );
+// echo $id_categoria; Imprimindo o ID da página
 
 // Criando um array que recebe o ID da categoria em cada página correspondente
 $array = ['category'=> $id_categoria];
@@ -45,8 +46,7 @@ else {
     echo "</div>";
 }
 echo "<div class='voltar'>";
-/* Perguntar para qual redirecionar: index.html ou \wordpress ou outro */
-echo "<a href='\wordpress'>Início</a>";
+echo "<a href='\wordpress'>Início</a>"; // Perguntar para qual redirecionar: index.html ou \wordpress ou outro 
 echo "</div>";
 
 get_footer();
