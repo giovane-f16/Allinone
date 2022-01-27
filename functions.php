@@ -62,16 +62,9 @@ function Pegar_ipca(){
 }
 
 function Pegar_musica(){
-    $array = ["hide_empty"=>false];
-    $categorias = get_terms($array);
-    
-    //var_dump($categorias);
-
-    $post = get_posts();
-    $id_da_categoria = get_the_terms($post, 'category');
-    
-    //var_dump($id_da_categoria);
-
+    $post = get_post(91);
+    $link = get_permalink($post);
+    echo "<a href='{$link}'>{$post->post_title}</a>";
 }
 
 ?>
