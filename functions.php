@@ -20,7 +20,7 @@ function Exibir_categorias(){
 
 function Pegar_valor_dolar() {
     // Iniciando conexão com o link que queremos acessar, enviando os parâmetros (get ?)
-    $ch = curl_init("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='01-07-2022'&format=json");
+    $ch = curl_init("http://economia.awesomeapi.com.br/json/last/USD-BRL");
                     
     // Definindo configurações para a nossa conexão (Parâmetros: conexão, comando, valor)
     curl_setopt($ch, CURLOPT_HEADER, 0); // Desativa retorno das informações do cabeçalho do server
@@ -31,16 +31,13 @@ function Pegar_valor_dolar() {
     $res_curl = curl_exec($ch); // Executamos a nossa conexão
 
     $resultado = json_decode($res_curl, true); // Convertendo a string JSON para Array
+        
+    echo $resultado["USDBRL"]["low"]; // Pegando o valor da chave low, que está dentro de dois arrays
     
-    $valores = $resultado["value"][0]; // Dentro do campo Value, existe um array de objetos com as informações que queremos
-    
-    echo $valores["cotacaoCompra"]; // Recuperando somente o valor do dólar 
-    echo "<br>";
-
     curl_close($ch); // Fechando a conexão
 } 
 
-function Pegar_ipca(){
+function Pegar_valor_ipca(){
     // Iniciando a conexão
     $conec = curl_init();
     $endpoint = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10844/dados/ultimos/10';
@@ -61,8 +58,39 @@ function Pegar_ipca(){
     curl_close($conec);
 }
 
-function Pegar_musica(){
-    $post = get_post(91);
+function Pegar_valor_euro(){
+    $ch = curl_init("http://economia.awesomeapi.com.br/json/last/EUR-BRL"); // Iniciando a conexão
+
+    curl_setopt($ch, CURLOPT_HEADER, 0); // Desativando o retorno das informações de cabeçalho
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); // Desativando verificação SSL
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); // Desativando verificação SSL
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // Permitindo o retorno das informações
+
+    $res_curl = curl_exec($ch); // Executando a conexão
+
+    $resultado = json_decode($res_curl, true); // Conveterndo de Json para Array
+
+    // print_r($resultado); Outra forma de visualizar o array multidimensional
+
+    echo $resultado["EURBRL"]["low"]; // Dentro do Array "EURBRL", estamos pegando a informação da chave "low"
+
+    curl_close($ch); // Encerrando a conexão
+}
+
+function Pegar_post_musica(){
+    $post = get_post(83);
+    $link = get_permalink($post);
+    echo "<a href='{$link}'>{$post->post_title}</a>";
+}
+
+function Pegar_post_esporte(){
+    $post = get_post(73);
+    $link = get_permalink($post);
+    echo "<a href='{$link}'>{$post->post_title}</a>";
+}
+
+function Pegar_post_ofertas(){
+    $post = get_post(87);
     $link = get_permalink($post);
     echo "<a href='{$link}'>{$post->post_title}</a>";
 }
