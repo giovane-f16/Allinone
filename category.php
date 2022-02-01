@@ -4,8 +4,16 @@ get_header();
 // Retorna o ID da categoria. get_query_var recupera o valor de uma variável de consulta na classe wp_query
 $id_categoria = get_query_var( 'cat' );
 
+if (isset($_GET["pagina"])) { 
+    $page = $_GET["pagina"];
+    $numero = (int)$page;
+}
+else {
+    $numero = 1;
+}
+
 // Criando um array que recebe o ID da categoria em cada página correspondente
-$array = ['category'=> $id_categoria];
+$array = ['category'=> $id_categoria, 'numberposts'=> 5, 'paged' => $numero];
 
 // Variável recebendo os posts referentes a aquela categoria determinada no $array
 $posts = get_posts($array);
@@ -45,6 +53,20 @@ else {
     echo "</div>";
 }
 Botao_tela_inicial();
+
+$categorias = get_category($id_categoria);
+
+$total_categoria = $categorias->category_count;
+
+$total_paginas = ceil($total_categoria / 5);
+
+echo "<div class='paginas'>";
+
+for($i=1; $i <= $total_paginas; $i++){
+    echo "<a href='./?pagina=$i'>{$i}</a> &nbsp;";
+}
+
+echo "</div>";
 
 get_footer();
 ?>

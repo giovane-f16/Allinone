@@ -11,7 +11,7 @@
             <li><a href="#">IPCA: <?php Pegar_valor_ipca() ?> </a></li>
             <li><a href="#">Gasolina: </a></li>
             <li><a href="#">Salário Mínimo: </a></li>
-            <li><a href="#">Euro: <?php Pegar_valor_euro() ?> </a></li>
+            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php Pegar_valor_euro() ?> </a></li>
         </ul>
     </nav>
 </div>
