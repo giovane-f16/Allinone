@@ -95,10 +95,16 @@ function Pegar_post_ofertas(){
     echo "<a href='{$link}'>{$post->post_title}</a>";
 }
 
-function Botao_voltar(){
-    echo "<div class='voltar'>";
+function Botao_tela_inicial(){
+    echo "<nav class='botao_inicio'>";
     echo "<a href='/wordpress'>Início</a>";
-    echo "</div>";
+    echo "</nav>";
+}
+
+function Botao_voltar(){
+    echo "<nav class='botao_voltar'>";
+    echo "<input type='button' value='Voltar' onClick='history.go(-1)'>";
+    echo "</nav>";
 }
 
 ?>

@@ -44,7 +44,7 @@ else {
     echo "</ul>";
     echo "</div>";
 }
-Botao_voltar();
+Botao_tela_inicial();
 
 get_footer();
 ?>

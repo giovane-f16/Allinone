@@ -133,14 +133,14 @@ body{
     color: black;
 }
 
-.voltar{
+.botao_inicio{
     display: flex;
     flex-direction: row;
     justify-content: end;
     padding-right: 40px;
 }
 
-.voltar a{
+.botao_inicio a{
     text-decoration: none;
     font-size: large;
     color: black;
@@ -150,8 +150,28 @@ body{
     border-radius: 15px;
 }
 
-.voltar a:hover{
-    background-color:rgb(153, 163, 248)
+.botao_inicio a:hover{
+    background-color:rgb(153, 163, 248);
+}
+
+.botao_voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.botao_voltar input{
+    font-size: large;
+    background-color: rgb(218, 221, 248);
+    padding: 5px 10px;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
+.botao_voltar input:hover{
+    background-color: rgb(153, 163, 248);
 }
 
 .titulo_subtitulo{

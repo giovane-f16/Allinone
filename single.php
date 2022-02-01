@@ -28,10 +28,10 @@
     echo "<p>".$post->post_content."</p>";
     echo "</div>";
 
+    echo "<div>"; 
+    Botao_tela_inicial();
     Botao_voltar();
-   
-    // Criar botão de voltar
-    //echo "<input type='button' value='Voltar' onClick='history.go(-1)'>";
+    echo "</div>";
     
     get_footer();
     ?>
