@@ -29,7 +29,7 @@
     echo "</div>";
 
     echo "<div>"; 
-    Botao_tela_inicial();
+    /*Botao_tela_inicial();*/
     Botao_voltar();
     echo "</div>";
     

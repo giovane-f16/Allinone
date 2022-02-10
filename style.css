@@ -12,7 +12,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*text-align: center;*/
 }
 
 .topo ul{
@@ -192,4 +191,27 @@ body{
     text-align: justify;
     padding: 10px 25px;
 
+}
+
+.paginas{
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+}
+.paginas a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(218, 221, 248);
+    padding: 4px 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.paginas a:hover{
+    background-color: rgb(153, 163, 248);
+}
+
+.rodape {
+    padding-top: 10px;
+    text-align: center;
 }
