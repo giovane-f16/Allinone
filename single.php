@@ -25,7 +25,7 @@
     $data = $post->post_date;
     $data_mod = substr($data, 0, 9);
     echo $data_mod;
-    echo "<p>".$post->post_content."</p>";
+    the_content(); /*echo "<p>".$post->post_content."</p>";*/
     echo "</div>";
 
     echo "<div>"; 

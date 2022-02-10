@@ -7,11 +7,11 @@
 <div class="meio">
     <nav>
         <ul>
-            <li><a href="http://www.dbins.com.br/dica/cotacao-do-dolar-com-php">Dólar: <?php Pegar_valor_dolar() ?> </a></li>
+            <li><a href="#">Dólar: <?php echo do_shortcode("[valor_moeda moeda='USD']"); ?> </a></li>
             <li><a href="#">IPCA: <?php Pegar_valor_ipca() ?> </a></li>
             <li><a href="#">Gasolina: </a></li>
             <li><a href="#">Salário Mínimo: </a></li>
-            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php Pegar_valor_euro() ?> </a></li>
+            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php echo do_shortcode("[valor_moeda moeda='EUR']"); ?> </a></li>
         </ul>
     </nav>
 </div>
