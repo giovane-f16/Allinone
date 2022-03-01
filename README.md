@@ -1,7 +1,7 @@
 # Site de notícias 
 ## Desenvolvido no **Wordpress**
 Dinamizado e integrado com a criação de Categorias e Post's. 
-O intúito dessa página web é informar ao visitante as notícias mais recentes de forma ágil.
+O intúito dessa página web é informar aos visitantes as notícias mais recentes de forma ágil.
 Nela possui API's quem mostram a cotação das moedas: dólar e euro.
 
 ## Posts
