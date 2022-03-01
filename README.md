@@ -1,2 +1,3 @@
-# Site de notícias desenvolvido em Wordpress
+# Site de notícias 
+## Desenvolvido em **Wordpress**
 
