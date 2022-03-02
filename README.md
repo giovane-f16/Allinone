@@ -21,8 +21,8 @@ O intúito desse tema, é informar aos visitantes as notícias mais recentes de 
 3. Ativar o plugin no painel de controle do WordPress
 
 ### Importantes
-A tela inicial possui três campos para a exibicão de posts específicos. Assim que baixar aparecerá um erro, dizendo que não foi encontrado o ID do post.
+A tela inicial possui três campos para a exibição de posts específicos. Assim que baixar aparecerá um erro, dizendo que não foi encontrado o ID do post.
 
-Para alterar o ID já implementado na funcao, basta ir no functions.php e alterar o campo com o ID do seu post.
+Para alterar o ID já implementado na função, basta ir no arquivo **functions.php** e alterar o campo com o ID do seu post.
 
     $post = get_post("valor_id");
