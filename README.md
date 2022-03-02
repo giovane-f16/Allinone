@@ -25,19 +25,19 @@ A tela inicial possui três campos para a exibição de posts específicos. Assi
 
 Para alterar o ID já implementado na função, basta ir no arquivo **functions.php** e alterar a variável $post com o ID do seu post nas função **get_post()**.
 
-    function Pegar_post_musica(){
+    function Pegar_post_musica() {
         $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
     }
 
-    function Pegar_post_esporte(){
+    function Pegar_post_esporte() {
         $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
     }
 
-    function Pegar_post_ofertas(){
+    function Pegar_post_ofertas() {
         $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
