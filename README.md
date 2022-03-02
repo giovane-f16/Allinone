@@ -1,6 +1,7 @@
 # Allinone
 ## Tema desenvolvido no **Wordpress**
 Dinamizado e integrado com a criação de Categorias e Post's. 
+
 O intúito desse tema, é informar aos visitantes as notícias mais recentes de forma ágil.
 
 ## Categorias
