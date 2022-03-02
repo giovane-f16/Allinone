@@ -13,6 +13,7 @@ O intúito desse tema, é informar aos visitantes as notícias mais recentes de 
 * Em cada post é mostrado o título, a data de criação e o resumo.
 
 ## Plugins
-* O tema foi criado e implementado com o Plugin que capta a cotação do dólar e do euro em tempo real
-Para adicioná-lo basta ir no diretório [Plugin_wordpress](<https://github.com/giovanef16-sys/Plugin_wordpress>)
+* O tema foi criado e implementado com o Plugin que capta a cotação do dólar e do euro em tempo real.
+
+Para adicioná-lo basta ir no diretório [Plugin_wordpress](https://github.com/giovanef16-sys/Plugin_wordpress)
 
