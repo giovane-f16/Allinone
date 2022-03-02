@@ -25,11 +25,10 @@
     $data = $post->post_date;
     $data_mod = substr($data, 0, 9);
     echo $data_mod;
-    the_content(); /*echo "<p>".$post->post_content."</p>";*/
+    the_content();
     echo "</div>";
 
     echo "<div>"; 
-    /*Botao_tela_inicial();*/
     Botao_voltar();
     echo "</div>";
     
