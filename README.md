@@ -1,4 +1,4 @@
-# Site de notícias
+# Allinone
 ## Tema desenvolvido no **Wordpress**
 Dinamizado e integrado com a criação de Categorias e Post's. 
 O intúito desse tema, é informar aos visitantes as notícias mais recentes de forma ágil.
@@ -11,4 +11,8 @@ O intúito desse tema, é informar aos visitantes as notícias mais recentes de 
 * Os posts mais recentes ficam nas primeiras páginas.
 * Cada Post pode ser anexado com uma Thumbnail
 * Em cada post é mostrado o título, a data de criação e o resumo.
+
+## Plugins
+* O tema foi criado e implementado com o Plugin que capta a cotação do dólar e do euro em tempo real
+Para adicioná-lo basta ir no diretório [Plugin_wordpress](https://github.com/giovanef16-sys/Plugin_wordpress)
 
