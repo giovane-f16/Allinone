@@ -23,22 +23,22 @@ O intúito desse tema, é informar aos visitantes as notícias mais recentes de 
 ### Importantes
 A tela inicial possui três campos para a exibição de posts específicos. Assim que baixar aparecerá um erro, dizendo que não foi encontrado o ID do post.
 
-Para alterar o ID já implementado na função, basta ir no arquivo **functions.php** e alterar a variável $post das funções com o ID do seu post.
+Para alterar o ID já implementado na função, basta ir no arquivo **functions.php** e alterar a variável $post com o ID do seu post nas função **get_post()**.
 
     function Pegar_post_musica(){
-        $post = get_post(83);
+        $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
     }
 
     function Pegar_post_esporte(){
-        $post = get_post(73);
+        $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
     }
 
     function Pegar_post_ofertas(){
-        $post = get_post(87);
+        $post = get_post("valor_id");
         $link = get_permalink($post);
         echo "<a href='{$link}'>{$post->post_title}</a>";
     }
