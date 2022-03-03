@@ -14,6 +14,7 @@ body{
     background-attachment: fixed;
 }
 
+
 .topo ul{
     display: flex;
     flex-direction: row;
@@ -214,4 +215,48 @@ body{
 .rodape {
     padding-top: 10px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1170px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .principal img{
+        max-height: 350px;
+        max-width: 80%;
+    }
+    .topo {
+        width:100%;
+        /*display: none;*/
+    }
+    .meio ul{
+        padding: 0px;
+        flex-direction: column;
+        
+    }
+    .meio ul li{
+        margin-bottom: 10px;
+
+    }
+    .inferior ul{
+        overflow-x: scroll;
+        width: 100%;
+        padding: 0px;
+    }
+    .inferior ul li{
+        position: static;
+        height: auto;
+        width: auto;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .inferior ul li a{
+        position: static;
+    }
+
 }
