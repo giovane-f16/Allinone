@@ -225,13 +225,19 @@ body{
         overflow-x: hidden;
     }
     .principal img{
-        max-height: 350px;
-        max-width: 80%;
+        max-height: 450px;
+        max-width: 400px;
     }
     .topo {
         width:100%;
         /*display: none;*/
     }
+
+    .meio{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .meio ul{
         padding: 0px;
         flex-direction: column;
@@ -266,5 +272,11 @@ body{
     .titulo_reportagem {
         padding-bottom: 10px;
     }
-
+    .titulo_subtitulo{
+        flex-direction: column;
+    }
+    /*.titulo_subtitulo img{
+        max-height: 400px;
+        max-width: 400px;
+    }*/
 }
