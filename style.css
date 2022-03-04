@@ -224,7 +224,6 @@ body{
     body{
         overflow-x: hidden;
     }
-
     .principal img{
         max-height: 350px;
         max-width: 80%;
@@ -257,6 +256,15 @@ body{
 
     .inferior ul li a{
         position: static;
+    }
+    .reportagens ul{
+        padding: 0px;
+    }
+    .reportagens ul li{
+        flex-direction: column;
+    }
+    .titulo_reportagem {
+        padding-bottom: 10px;
     }
 
 }

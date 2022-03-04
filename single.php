@@ -13,7 +13,7 @@
     global $post;
     
     echo "<div class='titulo_subtitulo'>";
-    echo "<div>";
+    echo "<div class='thumb'>";
     echo "<h1>".$post->post_title."</h1>";
     echo "<h2>".$post->post_excerpt."</h2>";
     echo "</div>";

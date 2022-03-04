@@ -33,7 +33,7 @@ else {
 
         $permalink = get_permalink($post); // Recupera o link completo da postagem
         echo "<li>";
-        echo "<div>";
+        echo "<div class='titulo_reportagem'>";
         echo "<h2><a href='{$permalink}'>".$post->post_title."</a></h2>"; // Criando âncora com o título do post
         
         // Tratando a String data, para ocultar a hora da postagem
