@@ -232,19 +232,16 @@ body{
         width:100%;
         /*display: none;*/
     }
-
     .meio{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px;
     }
-
     .meio ul{
         padding: 0px;
         flex-direction: column;
-        
     }
     .meio ul li{
         margin-bottom: 10px;
+        text-align: center;
 
     }
     .inferior ul{
@@ -259,9 +256,10 @@ body{
         margin: 5px;
         padding: 0px;
     }
-
     .inferior ul li a{
         position: static;
+        text-transform: capitalize;
+        padding: 2px;
     }
     .reportagens ul{
         padding: 0px;
@@ -275,8 +273,14 @@ body{
     .titulo_subtitulo{
         flex-direction: column;
     }
-    /*.titulo_subtitulo img{
-        max-height: 400px;
-        max-width: 400px;
-    }*/
+    .titulo_subtitulo img{
+        object-fit: cover;
+        object-position: top;
+        height: 300px;
+        width: 300px;
+        padding: 5px 30px;
+    }
+    .paginas{
+        padding-left: 5px;
+    }
 }
