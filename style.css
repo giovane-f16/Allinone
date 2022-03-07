@@ -19,7 +19,6 @@ body{
     display: flex;
     flex-direction: row;
     font-size: x-large;
-    background-color: rgb(218, 221, 248);
     justify-content: space-around;
     padding-left: 0px;
     border: 5px solid black;
@@ -230,7 +229,14 @@ body{
     }
     .topo {
         width:100%;
-        /*display: none;*/
+        
+    }
+    .topo ul{
+        flex-direction: column;
+    }
+    .topo ul li{
+        padding: 0px;
+        margin: 5px;
     }
     .meio{
         margin: 20px;
