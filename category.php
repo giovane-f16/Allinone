@@ -61,7 +61,7 @@ $total_paginas = ceil($total_categoria / 5);
 echo "<div class='paginas'>";
 
 for($i=1; $i <= $total_paginas; $i++){
-    echo "<a href='./?pagina=$i'>{$i}</a> &nbsp;";
+    echo "<a href='./?pagina=$i'>{$i}</a>";
 }
 echo "</div>";
 get_footer();
