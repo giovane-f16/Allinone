@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="principal">
-    <img src="https://image.freepik.com/vetores-gratis/feliz-ano-novo-2022-numeros-dourados-com-fitas-e-confetes-em-um-fundo-branco-banner-para-cabecalhos-de-ferias-de-natal-e-inverno-folhetos-de-festa_145391-965.jpg">
+    <img id="img_principal" src="https://image.freepik.com/vetores-gratis/feliz-ano-novo-2022-numeros-dourados-com-fitas-e-confetes-em-um-fundo-branco-banner-para-cabecalhos-de-ferias-de-natal-e-inverno-folhetos-de-festa_145391-965.jpg">
 </div>
 
 <div class="meio">
@@ -25,5 +25,7 @@
         </ul>
     </nav>
 </div>
+<button id="botao">Teste</button>
+<script src="wp-content/themes/allinone/scripts.js"></script>
 
 <?php get_footer(); ?>
