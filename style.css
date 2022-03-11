@@ -224,10 +224,11 @@ body{
     body{
         overflow-x: hidden;
     }
-    .principal img{
-        max-height: 450px;
-        max-width: 400px;
+    #menuicone {
+        height: 50px;
+        width: 50px;
     }
+
     .topo {
         width:100%;
         
@@ -238,6 +239,10 @@ body{
     .topo ul li{
         padding: 0px;
         margin: 5px;
+    }
+    .principal img{
+        max-height: 450px;
+        max-width: 400px;
     }
     .meio{
         margin: 20px;

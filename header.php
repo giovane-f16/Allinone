@@ -11,7 +11,14 @@
     <div class="topo">
         <nav>
             <ul>
-                <?php Exibir_categorias() ?>
+                <img id="menuicone" src="wp-content\themes\allinone\menuicon.png">
+                
+                <script> 
+                document.getElementById("menuicone").addEventListener("click", function(){
+                    <?php Exibir_categorias() ?>
+                })
+                </script>
+                
             </ul>
         </nav>
     </div>
