@@ -6,7 +6,9 @@ document.getElementById("botao").addEventListener("click", function() {
     document.getElementById("img_principal").remove();
 });
 
-
+document.getElementById("menu").addEventListener("click", function(){
+    alert("Funcionou JavaScript");
+});
 
 /*
 var elemento = document.getElementById("botao");

@@ -16,11 +16,7 @@
                         <img src="wp-content/themes/allinone/menuicon.png" id="menuicone">
                     </button -->
                     <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menu">
-                    <script> 
-                        document.getElementById("menu").addEventListener("click", function(){
-                        alert("Funcionou");
-                        });
-                    </script>
+                    <script src="wp-content/themes/allinone/scripts.js"> </script>
                 </li>
             </ul>
         </nav>
