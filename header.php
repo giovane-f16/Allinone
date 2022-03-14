@@ -18,6 +18,10 @@
                     <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menu">
                     <script src="wp-content/themes/allinone/scripts.js"> </script>
                 </li>
+                <li>
+                    <a href="#"><img src="wp-content/themes/allinone/g_logo.png" id="g_logo"></a>
+                    <?php //Exibir_categorias() ?>
+                </li>
             </ul>
         </nav>
     </div>
