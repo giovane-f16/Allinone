@@ -224,12 +224,10 @@ body{
     body{
         overflow-x: hidden;
     }
-    #menuicone {
-        background-image:url("wp-content/themes/allinone/menuicon.png");
+    input[type=image] {
         height: 50px;
         width: 50px;
     }
-
     .topo {
         width:100%;
         

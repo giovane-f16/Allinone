@@ -10,13 +10,18 @@
 <body>
     <div class="topo">
         <nav>
-            <ul> 
-                <button id="menuicone"></button>
-                <script> 
-                    document.getElementById("menuicone").addEventListener("click", function(){
-                    alert("Funcionou");
-                    });
-                </script>      
+            <ul>
+                <li>
+                    <!-- button type="button" id="menu">
+                        <img src="wp-content/themes/allinone/menuicon.png" id="menuicone">
+                    </button -->
+                    <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menu">
+                    <script> 
+                        document.getElementById("menu").addEventListener("click", function(){
+                        alert("Funcionou");
+                        });
+                    </script>
+                </li>
             </ul>
         </nav>
     </div>
