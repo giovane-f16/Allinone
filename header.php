@@ -10,15 +10,13 @@
 <body>
     <div class="topo">
         <nav>
-            <ul>
-                <img id="menuicone" src="wp-content\themes\allinone\menuicon.png">
-                
+            <ul> 
+                <button id="menuicone"></button>
                 <script> 
-                document.getElementById("menuicone").addEventListener("click", function(){
-                    <?php Exibir_categorias() ?>
-                })
-                </script>
-                
+                    document.getElementById("menuicone").addEventListener("click", function(){
+                    alert("Funcionou");
+                    });
+                </script>      
             </ul>
         </nav>
     </div>

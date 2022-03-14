@@ -225,6 +225,7 @@ body{
         overflow-x: hidden;
     }
     #menuicone {
+        background-image:url("wp-content/themes/allinone/menuicon.png");
         height: 50px;
         width: 50px;
     }

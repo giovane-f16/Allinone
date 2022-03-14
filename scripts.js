@@ -6,6 +6,8 @@ document.getElementById("botao").addEventListener("click", function() {
     document.getElementById("img_principal").remove();
 });
 
+
+
 /*
 var elemento = document.getElementById("botao");
 elemento.onclick = function(){
