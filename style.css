@@ -92,7 +92,7 @@ input[type=image] {
 .inferior ul li a{
     display: block;
     text-decoration: none;
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     height: 100%;
     text-align: center;
