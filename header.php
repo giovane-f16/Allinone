@@ -12,9 +12,6 @@
         <nav>
             <ul>
                 <li>
-                    <!-- button type="button" id="menu">
-                        <img src="wp-content/themes/allinone/menuicon.png" id="menuicone">
-                    </button -->
                     <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menu">
                     <script src="wp-content/themes/allinone/scripts.js"> </script>
                 </li>
