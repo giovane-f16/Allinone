@@ -13,12 +13,14 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
+#menu{
+    display: none;
+}
 input[type=image] {
     height: 100px;
     width: 100px;
 }
-.topo #g_logo{
+#menu #g_logo{
     height: 120px; 
 }
 
@@ -218,16 +220,21 @@ input[type=image] {
     }
     body{
         overflow-x: hidden;
+        width: 100%;
+    }
+    #menu{
+        display: flex;
     }
     input[type=image] {
         height: 65px;
         width: 60px;
     }
-    .topo #g_logo {
+    #menu #g_logo {
         height: 65px;
     }
     .topo{
         width:100%;
+        display: none;
     }
     .topo ul{
         flex-direction: row;
