@@ -46,9 +46,29 @@ input[type=image] {
 .topo ul li a:hover{
     color: rgb(4, 4, 179);
 }
+.categorias{
+    list-style-type: none;
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/6lceP0TOvBLkGYpu5YQwiz/30ac27a60e4083d1a5c59b23c058309b/3.jpg?fit=fill&w=480&h=270");
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.categorias li{
+    margin: 15px;
+}
+.categorias a{
+    text-decoration: none;
+    color: black;
+    font-size:xx-large;
+    font-family: monospace;
+    padding: 25px;
+}
 .principal {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 .meio{
     margin-top: 95px;
@@ -192,7 +212,7 @@ input[type=image] {
     text-align: center;
 }
 
-@media only screen and (max-width: /*1170px*/ 850px) {
+@media only screen and (max-width: /*1170px*/ 450px) {
     html{
         overflow-x: hidden;
     }

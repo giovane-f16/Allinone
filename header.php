@@ -20,8 +20,10 @@
                 </li>
                 <li>
                     <a href="#" ><img src="wp-content/themes/allinone/g_logo.png" id="g_logo"></a>
-                    <?php //Exibir_categorias() ?>
                 </li>
             </ul>
         </nav>
+    </div>
+    <div class="categorias">
+        <?php Exibir_categorias()?>
     </div>
