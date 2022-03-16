@@ -73,7 +73,7 @@ body{
 }
 .principal {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     margin-top: 20px;
 }
 .meio{
@@ -263,9 +263,13 @@ body{
         padding: 0px;
         margin: 5px;
     }
+    .principal{
+        width: 100%;
+        padding: 0px;
+    }
     .principal img{
-        max-height: 450px;
-        max-width: 400px;
+        width: 350px;
+        height: 300px;
     }
     .meio{
         margin: 20px;
