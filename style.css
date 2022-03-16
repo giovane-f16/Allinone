@@ -16,7 +16,7 @@ body{
 #menu{
     display: none;
 }
-input[type=image] {
+#menuicon{
     height: 100px;
     width: 100px;
 }
@@ -234,12 +234,23 @@ input[type=image] {
         margin-bottom: 10px;
         width: 50%;
     }
-    input[type=image] {
+    #menuicon{
         height: 65px;
         width: 60px;
     }
+    #closeicon {
+        height: 30px;
+        width: 30px;
+        margin-top: 7px;
+        margin-right: 10px;
+    }
     #menu #g_logo {
         height: 65px;
+    }
+    #close {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
     .topo{
         width:100%;

@@ -18,13 +18,12 @@
     <div id="menu">
         <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menuicon">
         <script src="wp-content/themes/allinone/scripts.js"> </script>
-        <a href="#" ><img src="wp-content/themes/allinone/g_logo.png" id="g_logo"></a>
+        <!-- a href="#" ><img src="wp-content/themes/allinone/g_logo.png" id="g_logo"></a -->
     </div>
+    
     <div id="categorias">
-        <ul>
+        <div id="close"> 
+            <input type="image" src="wp-content/themes/allinone/closeicon.png" id="closeicon">
+        </div>
         <?php Exibir_categorias()?>
-        </ul>
-        <ul>
-        <input type="image" src="wp-content/themes/allinone/closeicon.png" id="closeicon">
-        </ul>
     </div>

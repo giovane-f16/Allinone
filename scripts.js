@@ -1,7 +1,7 @@
-/*
-document = objeto 
-Método getElementById => retorna um objeto
-*/
+
+//document = objeto 
+//Método getElementById => retorna um objeto
+
 document.getElementById("botao").addEventListener("click", function() { 
     document.getElementById("img_principal").remove();
 });
@@ -19,10 +19,6 @@ var elemento = document.getElementById("botao");
 elemento.onclick = function(){
     alert("Mensagem do alerta");
 }
-
-elemento.onclick = function(){
-    alert("Teste botão 2");
-}
 elemento.onmouseup = function(){
     alert("Segurando o clique");
 } 
@@ -32,4 +28,5 @@ elemento.onmousedown = function(){
 elemento.onmouseover = function (){
     alert("Passando o mouse");
 }
-object.addEventListener("mousedown", myScript);*/
+object.addEventListener("mousedown", myScript);
+*/
