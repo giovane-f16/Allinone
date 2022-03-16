@@ -7,7 +7,7 @@ document.getElementById("botao").addEventListener("click", function() {
 });
 
 document.getElementById("menu").addEventListener("click", function(){
-    alert("Funcionou JavaScript");
+    document.getElementById("#categorias").style.display = "block";
 });
 
 /*

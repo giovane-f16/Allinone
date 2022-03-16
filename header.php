@@ -24,6 +24,6 @@
             </ul>
         </nav>
     </div>
-    <div class="categorias">
+    <div id="categorias">
         <?php Exibir_categorias()?>
     </div>
