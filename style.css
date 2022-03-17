@@ -4,8 +4,6 @@ Author: Giovane Ferreira
 Description: Site de notícias rápidas
 Version: 1.0.0
 */
-
-
 body{
     font-family: sans-serif;
     background-color: rgb(229, 229, 255);
@@ -51,7 +49,6 @@ body{
 .topo ul li a:hover{
     color: rgb(4, 4, 179);
 }
-
 .principal {
     display: flex;
     justify-content:center;
@@ -198,16 +195,14 @@ body{
     padding-top: 10px;
     text-align: center;
 }
-
 @media only screen and (max-width: 1170px ) {
-
     #menu{
         display: flex;
         background-image: url("https://images.ctfassets.net/hrltx12pl8hq/6lceP0TOvBLkGYpu5YQwiz/30ac27a60e4083d1a5c59b23c058309b/3.jpg?fit=fill&w=480&h=270");
         border: 4px solid black;
         border-radius: 10px;
         margin-bottom: 10px;
-        width: 50%;
+        /*width: 100%;*/
     }
     #menuicon{
         height: 65px;
@@ -254,12 +249,12 @@ body{
         padding-left: 0px;
     }
     #categorias li{
-        margin: 15px;
+        margin: 25px;
     }
     #categorias a{
         text-decoration: none;
         color: black;
-        font-size:x-large;
+        font-size:xx-large;
         font-family: monospace;
     }
     .topo{
