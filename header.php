@@ -8,6 +8,7 @@
     <title>Allinone</title>
 </head>
 <body>
+    <div id="layer"></div>
     <div class="topo" >
         <nav>
             <ul>
@@ -16,14 +17,12 @@
         </nav>
     </div>
     <div id="menu">
-        <input type="image" src="wp-content/themes/allinone/menuicon.png" id="menuicon">
-        <script src="wp-content/themes/allinone/scripts.js"> </script>
-    
+        <input type="image" src="/wordpress/wp-content/themes/allinone/menuicon.png" id="menuicon">
     </div>
     
     <div id="categorias">
         <div id="close"> 
-            <input type="image" src="wp-content/themes/allinone/closeicon.png" id="closeicon">
+            <input type="image" src="/wordpress/wp-content/themes/allinone/closeicon.png" id="closeicon">
         </div>
         <?php Exibir_categorias()?>
     </div>

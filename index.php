@@ -24,8 +24,5 @@
             <li><?php Pegar_post_ofertas() ?></li>
         </ul>
     </nav>
-</div -->
-<button id="botao">Teste</button>
-<script src="wp-content/themes/allinone/scripts.js"></script>
-
+</div>
 <?php get_footer(); ?>

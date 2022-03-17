@@ -213,6 +213,16 @@ body{
         height: 65px;
         width: 60px;
     }
+    body{
+        margin: 0px;
+    }
+    #layer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(134, 110, 122, 0.8);
+        display: none;
+    }
     #closeicon {
         height: 30px;
         width: 30px;
