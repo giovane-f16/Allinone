@@ -1,6 +1,4 @@
 
-//document = objeto 
-//Método getElementById => retorna um objeto
 function fecharMenu(){
     document.getElementById("categorias").style.display = "none";
     document.getElementById("layer").style.display = "none";
@@ -14,7 +12,6 @@ function abrirMenu(){
 document.getElementById("menu").addEventListener("click", function(){
     abrirMenu();
 });
-
 document.getElementById("closeicon").addEventListener("click", function(){
     fecharMenu();
 })
@@ -22,19 +19,3 @@ document.getElementById("layer").addEventListener("click", function(){
     fecharMenu();
 })
 
-/*
-var elemento = document.getElementById("botao");
-elemento.onclick = function(){
-    alert("Mensagem do alerta");
-}
-elemento.onmouseup = function(){
-    alert("Segurando o clique");
-} 
-elemento.onmousedown = function(){
-    alert("Soltando o clique");
-}
-elemento.onmouseover = function (){
-    alert("Passando o mouse");
-}
-object.addEventListener("mousedown", myScript);
-*/
