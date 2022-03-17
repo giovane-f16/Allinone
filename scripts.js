@@ -14,8 +14,8 @@ document.getElementById("menu").addEventListener("click", function(){
 });
 document.getElementById("closeicon").addEventListener("click", function(){
     fecharMenu();
-})
+});
 document.getElementById("layer").addEventListener("click", function(){
     fecharMenu();
-})
+});
 
