@@ -17,12 +17,15 @@
         </nav>
     </div>
     <div id="menu">
-        <input type="image" src="/wordpress/wp-content/themes/allinone/menuicon.png" id="menuicon">
+        <input type="image" id="menuicon" src="/wordpress/wp-content/themes/allinone/menuicon.png">
+        <a href="#" id="g_logo"><img src="/wordpress/wp-content/themes/allinone/g_logo.png"></a>
+        <a href="#" id="searchicon"><img src="/wordpress/wp-content/themes/allinone/searchicon.png"></a>
+        
     </div>
     
     <div id="categorias">
         <div id="close"> 
-            <input type="image" src="/wordpress/wp-content/themes/allinone/closeicon.png" id="closeicon">
+            <input type="image" id="closeicon" src="/wordpress/wp-content/themes/allinone/closeicon.png">
         </div>
         <?php Exibir_categorias()?>
     </div>

@@ -9,7 +9,7 @@ function abrirMenu(){
     document.getElementById("layer").style.display = "block";
     document.body.style.overflowY = "hidden";
 }
-document.getElementById("menu").addEventListener("click", function(){
+document.getElementById("menuicon").addEventListener("click", function(){
     abrirMenu();
 });
 document.getElementById("closeicon").addEventListener("click", function(){
