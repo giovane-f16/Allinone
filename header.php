@@ -18,7 +18,7 @@
     </div>
     <div id="menu">
         <input type="image" id="menuicon" src="/wordpress/wp-content/themes/allinone/menuicon.png">
-        <a href="#" id="g_logo"><img src="/wordpress/wp-content/themes/allinone/g_logo.png"></a>
+        <a href="/wordpress" id="g_logo"><img src="/wordpress/wp-content/themes/allinone/g_logo.png"></a>
         <a href="#" id="searchicon"><img src="/wordpress/wp-content/themes/allinone/searchicon.png"></a>
         
     </div>
