@@ -7,7 +7,7 @@
 <div class="meio">
     <nav>
         <ul>
-            <li><a href="#">Dólar: <?php echo do_shortcode("[valor_moeda moeda='USD']"); ?> </a></li>
+            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Dólar: <?php echo do_shortcode("[valor_moeda moeda='USD']"); ?> </a></li>
             <li><a href="#">IPCA: <?php Pegar_valor_ipca() ?> </a></li>
             <li><a href="#">Gasolina: </a></li>
             <li><a href="#">Salário Mínimo: </a></li>
