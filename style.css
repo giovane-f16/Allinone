@@ -203,7 +203,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-@media only screen and (max-width: /*1170px*/ 938px) {
+@media only screen and (max-width: 1170px) {
     #menu{
         display: flex;
         justify-content: space-around;
