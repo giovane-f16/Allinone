@@ -26,17 +26,5 @@
     </nav>
 </div>
 
-<button id="cadastro"> Cadastro </button>
-
-<script> 
-    var alerta;
-    alerta = document.getElementById("cadastro");
-    alerta.onclick = function (){
-        alert(alerta);
-    }
-
-    /** https://www.w3schools.com/js/js_events.asp */
- </script>
-
 <?php get_footer(); ?>
 
