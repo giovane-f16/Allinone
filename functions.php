@@ -7,9 +7,7 @@ add_action ("after_setup_theme", function() {
 
 // Criando a função para dinamizar as categorias
 function Exibir_categorias(){
-
     $array = ["hide_empty"=>false];
-    
     $categorias = get_terms($array);
 
     foreach ($categorias as $categoria) {
@@ -29,14 +27,11 @@ function Pegar_valor_ipca(){
     curl_setopt($conec, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($conec, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
     curl_setopt($conec, CURLOPT_CUSTOMREQUEST, "GET");
-    
     $exec_curl = curl_exec($conec);
-
     $resultado = json_decode($exec_curl, true);
-
-    var_dump($resultado);
-
+    
     curl_close($conec);
+    return $resultado;
 }
 
 function Pegar_post_musica(){

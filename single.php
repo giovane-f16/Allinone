@@ -13,7 +13,7 @@
     global $post;
     
     echo "<div class='titulo_subtitulo'>";
-    echo "<div>";
+    echo "<div class='thumb'>";
     echo "<h1>".$post->post_title."</h1>";
     echo "<h2>".$post->post_excerpt."</h2>";
     echo "</div>";
@@ -25,11 +25,10 @@
     $data = $post->post_date;
     $data_mod = substr($data, 0, 9);
     echo $data_mod;
-    the_content(); /*echo "<p>".$post->post_content."</p>";*/
+    the_content();
     echo "</div>";
 
     echo "<div>"; 
-    /*Botao_tela_inicial();*/
     Botao_voltar();
     echo "</div>";
     
