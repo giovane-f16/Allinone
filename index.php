@@ -2,7 +2,7 @@
 
 <div class="principal">
     <img id="img_principal" src="https://image.freepik.com/vetores-gratis/feliz-ano-novo-2022-numeros-dourados-com-fitas-e-confetes-em-um-fundo-branco-banner-para-cabecalhos-de-ferias-de-natal-e-inverno-folhetos-de-festa_145391-965.jpg">
-</div -->
+</div>
 
 <div class="meio">
     <nav>
@@ -14,7 +14,7 @@
             <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php echo do_shortcode("[valor_moeda moeda='EUR'] "); ?> </a></li>
         </ul>
     </nav>
-</div -->
+</div>
 
 <div class="inferior">
     <nav> 
