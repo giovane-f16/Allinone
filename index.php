@@ -12,6 +12,7 @@
             <li><a href="#">Gasolina: </a></li>
             <li><a href="#">Salário Mínimo: </a></li>
             <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php echo do_shortcode("[valor_moeda moeda='EUR'] "); ?> </a></li>
+            <li><?php pegar_title(); ?></li>
         </ul>
     </nav>
 </div>
@@ -25,4 +26,5 @@
         </ul>
     </nav>
 </div>
+
 <?php get_footer(); ?>

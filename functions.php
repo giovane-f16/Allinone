@@ -64,5 +64,13 @@ function Botao_voltar(){
     echo "</nav>";
 }
 
+// Função para pegar o título do vídeo pelo URL
+function pegar_title(){
+    $url_video = "https://www.youtube.com/watch?v=guJsZZgkWr0";
+    $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$url_video."&format=xml");
+    echo $saida->title;
+    return $saida;
+}
+
 ?>
 
