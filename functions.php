@@ -16,24 +16,6 @@ function Exibir_categorias(){
     }
 }
 
-function Pegar_valor_ipca(){
-    // Iniciando a conexão
-    $conec = curl_init();
-    $endpoint = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10844/dados/ultimos/10';
-    $params = array('formato' => 'json');
-    $url = $endpoint . '?' . http_build_query($params);
-
-    curl_setopt($conec, CURLOPT_URL, $url);
-    curl_setopt($conec, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($conec, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-    curl_setopt($conec, CURLOPT_CUSTOMREQUEST, "GET");
-    $exec_curl = curl_exec($conec);
-    $resultado = json_decode($exec_curl, true);
-    
-    curl_close($conec);
-    return $resultado;
-}
-
 function Pegar_post_musica(){
     $post = get_post(83);
     $link = get_permalink($post);
@@ -64,13 +46,5 @@ function Botao_voltar(){
     echo "</nav>";
 }
 
-// Função para pegar o título do vídeo pelo URL // https://www.youtube.com/watch?v=dZVVGgM4yXY
-function pegar_title(){
-    $url_video = "https://www.youtube.com/watch?v=kzLESxMqnTg&list=PLBk7-Us4FtYux5RXqMuRGZujoveF4zPAN&index=25";
-    $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$url_video."&format=xml");
-    echo $saida->title;
-    return $saida;
-}
-// https://pressidium.com/blog/wordpress-meta-boxes-a-quick-guide/
 ?>
 

@@ -7,12 +7,10 @@
 <div class="meio">
     <nav>
         <ul>
-            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Dólar: <?php echo do_shortcode("[valor_moeda moeda='USD']" ); ?> </a></li>
-            <li><a href="#">IPCA: <?php Pegar_valor_ipca() ?> </a></li>
-            <li><a href="#">Gasolina: </a></li>
-            <li><a href="#">Salário Mínimo: </a></li>
-            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: <?php echo do_shortcode("[valor_moeda moeda='EUR'] "); ?> </a></li>
-            <li><?php pegar_title(); ?></li>
+            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Dólar: R$ <?php echo do_shortcode("[valor_moeda moeda='USD']"); ?> </a></li>
+            <li><a href="https://docs.awesomeapi.com.br/api-de-moedas">Euro: R$ <?php echo do_shortcode("[valor_moeda moeda='EUR']"); ?> </a></li>
+            <li><a href="https://coinranking.com/pt">Bitcoin: $<?php echo do_shortcode("[criptomoedas entrada='0']"); ?></a></li>
+            <li><a href="https://coinranking.com/pt">Etherum: $<?php echo do_shortcode("[criptomoedas entrada='1']"); ?></a></li>
         </ul>
     </nav>
 </div>
