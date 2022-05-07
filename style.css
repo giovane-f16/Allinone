@@ -203,6 +203,12 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.campoContato label span input{
+    padding: 12px 20px;
+}
+.campoContato label span textarea{
+    padding: 12px 20px;
+}
 @media only screen and (max-width: 1170px) {
     #menu{
         display: flex;
