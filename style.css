@@ -203,6 +203,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
+    font-size: 20px;
 }
 .campoContato label span input{
     margin-top: 3%;
